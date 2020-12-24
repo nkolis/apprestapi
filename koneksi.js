@@ -6,9 +6,11 @@ const conn = mysql.createConnection({
     user: 'root',
     password: '',
     database: 'dbrestapi'
-});if
+});
 
 conn.connect( (err) => {
     if(err) throw err;
     console.log('Mysql terkoneksi');
 });
+
+module.exports = conn;
